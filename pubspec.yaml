@@ -1,0 +1,47 @@
+name: flutter_fitness_app
+description: "My Fitness App in Flutter!"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+
+  animate_do: any
+  calendar_date_picker2: ^1.1.5
+  flutter:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_riverpod: ^2.5.1
+  flutter_svg: ^2.0.10+1
+  font_awesome_flutter: any
+  go_router: ^14.2.1
+  google_fonts: ^6.2.1
+  rive: any
+  
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+  
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/design/FB.png"
+  adaptive_icon_background: "assets/images/design/FB.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/design/
+    - assets/images/design/auth/
+    - assets/images/design/setup/
+    - assets/images/design/home/
+    - assets/images/design/exercises/
+    - assets/images/design/nutrition/
+    - assets/images/design/articles/
+    - assets/images/design/workout/
+    - assets/images/onboarding/
+    - assets/animations/
