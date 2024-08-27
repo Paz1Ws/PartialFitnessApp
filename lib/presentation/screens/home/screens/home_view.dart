@@ -11,20 +11,7 @@ class HomeView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
     // Delete this list and replace it with your real data
-    List<Widget> articles = [
-      ArticleCard(
-        image: 'assets/images/design/articles/article1.png',
-        description: 'Supplement Guide',
-      ),
-      ArticleCard(
-        image: 'assets/images/design/articles/article2.png',
-        description: '15 Quick & Effective Daily Routines',
-      ),
-      ArticleCard(
-        image: 'assets/images/design/articles/article1.png',
-      ),
-      ArticleCard(image: 'assets/images/design/articles/article2.png'),
-    ];
+
     return HomeViewTemplate(
       bottomNavigationBar: MyBottomBarNavigator(
         selectedIndex: 0,
@@ -47,11 +34,11 @@ class HomeView extends ConsumerWidget {
                 },
                 // Workout
                 () {
-                  context.push('/workout');
+                  //    context.push('/workout');
                 },
                 // Nutrition
                 () {
-                  context.push('/nutrition');
+                  //   context.push('/nutrition');
                 },
                 // Community
                 () {},
@@ -82,22 +69,22 @@ class HomeView extends ConsumerWidget {
                   style: MyTextTheme.Poppins20.copyWith(color: secondaryColor)),
             ),
             SizedBox(height: 10),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: GridView.count(
-                mainAxisSpacing: 10,
-                crossAxisSpacing: 10,
-                crossAxisCount: 2,
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                children: List.generate(
-                  articles.length,
-                  (index) {
-                    return articles[index];
-                  },
-                ),
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 10),
+            //   child: GridView.count(
+            //     mainAxisSpacing: 10,
+            //     crossAxisSpacing: 10,
+            //     crossAxisCount: 2,
+            //     shrinkWrap: true,
+            //     physics: NeverScrollableScrollPhysics(),
+            //     children: List.generate(
+            //       articles.length,
+            //       (index) {
+            //         return articles[index];
+            //       },
+            //     ),
+            //   ),
+            // ),
             SizedBox(height: 10),
           ],
         ),

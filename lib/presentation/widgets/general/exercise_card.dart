@@ -133,16 +133,16 @@ class ExerciseOrFoodCard extends StatelessWidget {
                 if (onTap != null) {
                   onTap!();
                 } else {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => WorkoutDetails(
-                      image: image,
-                      level: level,
-                      title: title,
-                      description: description,
-                      time: time,
-                      kcal: kcal,
-                    ),
-                  ));
+                  // Navigator.of(context).push(MaterialPageRoute(
+                  //   builder: (context) => WorkoutDetails(
+                  //     image: image,
+                  //     level: level,
+                  //     title: title,
+                  //     description: description,
+                  //     time: time,
+                  //     kcal: kcal,
+                  //   ),
+                  // ));
                 }
               },
               icon: Icon(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fitness_app/config/theme/app_fonts.dart';
+import 'package:flutter_fitness_app/presentation/widgets/general/exercise_card.dart';
 import 'package:flutter_fitness_app/presentation/widgets/widgets.dart';
 
 import '../../../config/theme/app_colors.dart';
